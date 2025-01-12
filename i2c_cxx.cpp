@@ -18,9 +18,9 @@ namespace idf {
 /**
  * I2C bus are defined in the header files, let's check that the values are correct
  */
-#if SOC_I2C_NUM >= 2
+#if SOC_HP_I2C_NUM >= 2
 static_assert(I2C_NUM_1 == 1, "I2C_NUM_1 must be equal to 1");
-#endif // SOC_I2C_NUM >= 2
+#endif // SOC_HP_I2C_NUM >= 2
 
 esp_err_t check_i2c_num(uint32_t i2c_num) noexcept
 {
